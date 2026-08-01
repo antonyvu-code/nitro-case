@@ -1,0 +1,335 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Nitro — a design & development studio taking on complex problems and turning them into opportunities." />
+<title>Nitro — Digital Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+
+<!-- ===== Skip link (a11y) ===== -->
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<!-- ===== Header / Nav ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav">
+    <a class="brand" href="#" aria-label="Nitro Startseite">Nitro<span class="dot">.</span></a>
+
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <a href="#services">Services</a>
+      <a href="#works">Works</a>
+      <a href="#process">Process</a>
+      <a href="#blog">Blog</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-ghost nav-cta">Request a Project</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#services">Services</a>
+    <a href="#works">Works</a>
+    <a href="#process">Process</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact" class="btn btn-accent">Request a Project</a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-panel">
+        <svg class="hero-fluid" viewBox="0 0 600 310" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <radialGradient id="heroBase" cx="52%" cy="44%" r="80%">
+              <stop offset="0%" stop-color="#0c4a3d" />
+              <stop offset="52%" stop-color="#082e28" />
+              <stop offset="100%" stop-color="#03100d" />
+            </radialGradient>
+            <filter id="liquid" x="-6%" y="-6%" width="112%" height="112%">
+              <feTurbulence type="fractalNoise" baseFrequency="0.014 0.024" numOctaves="2" seed="9" result="noise" />
+              <feComponentTransfer in="noise" result="veins">
+                <feFuncA type="table" tableValues="0 0 0.15 0 0.9 0 0.25 0 1 0 0.2 0 0.7 0" />
+              </feComponentTransfer>
+              <feColorMatrix in="veins" type="matrix"
+                values="0 0 0 0 0.11
+                        0 0 0 0 0.87
+                        0 0 0 0 0.64
+                        0 0 0 1 0" result="green" />
+              <feGaussianBlur in="green" stdDeviation="0.6" result="glow" />
+              <feMerge>
+                <feMergeNode in="glow" />
+                <feMergeNode in="green" />
+              </feMerge>
+            </filter>
+          </defs>
+          <rect width="600" height="310" fill="url(#heroBase)" />
+          <rect width="600" height="310" filter="url(#liquid)" opacity="0.85" />
+        </svg>
+        <div class="hero-content">
+          <h1 class="hero-title" data-reveal>Taking on complex problems and turning them into opportunities</h1>
+          <a href="#contact" class="btn btn-accent" data-reveal>Request a Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section class="section" id="services">
+    <div class="container">
+      <p class="eyebrow" data-reveal>Our Delightful Services</p>
+      <h2 class="section-title" data-reveal>
+        We are a group of passionate people working closely with clients so their business can grow.
+      </h2>
+
+      <div class="cards-grid" data-stagger>
+        <!-- Card -->
+        <article class="service-card">
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </span>
+          <h3>UI/UX</h3>
+          <p>Creating user-centered design for web and app interfaces.</p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M8.5 12.5 7 22l5-3 5 3-1.5-9.5"/></svg>
+          </span>
+          <h3>Brand Identity</h3>
+          <p>Comprehensive brand identity services for businesses of all sizes.</p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          </span>
+          <h3>SEO</h3>
+          <p>Excellent Search Engine Optimization so you capture more traffic and revenue.</p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H4z"/><path d="M2 20h20M9 10l2 2 4-4"/></svg>
+          </span>
+          <h3>Web Design</h3>
+          <p>Crafting web design that not only works but looks good.</p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>
+          </span>
+          <h3>Web Development</h3>
+          <p>Developing beautifully designed websites efficiently and fast.</p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+          </span>
+          <h3>App Development</h3>
+          <p>Apps that add value to your business and boost efficiency with cutting-edge tech.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Selected Works ===== -->
+  <section class="section" id="works">
+    <div class="container">
+      <div class="section-head-row" data-reveal>
+        <div>
+          <h2 class="section-title mb0">Selected works</h2>
+          <p class="head-sub">See our featured works here</p>
+        </div>
+        <a href="#" class="btn btn-ghost btn-sm">View all</a>
+      </div>
+
+      <div class="works-grid" data-stagger>
+        <article class="work-card">
+          <div class="work-thumb thumb-a"></div>
+          <div class="work-meta">
+            <div class="tags"><span>Brand Identity</span><span>Web Design</span></div>
+            <h3>Flinkerk</h3>
+            <p>A website that tells a unique story and reflects a bold brand.</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-thumb thumb-b"></div>
+          <div class="work-meta">
+            <div class="tags"><span>Web Dev</span><span>Graphic Design</span></div>
+            <h3>Flickerd</h3>
+            <p>Streamlines projects to develop and deploy for the web, fully automated.</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-thumb thumb-c"></div>
+          <div class="work-meta">
+            <div class="tags"><span>UI/UX</span><span>SEO</span></div>
+            <h3>Northwind</h3>
+            <p>A conversion-focused platform built for scale and speed.</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-thumb thumb-d"></div>
+          <div class="work-meta">
+            <div class="tags"><span>Branding</span><span>App</span></div>
+            <h3>Orbit Labs</h3>
+            <p>End-to-end product design for an ambitious fintech startup.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Design Process ===== -->
+  <section class="section section-alt" id="process">
+    <div class="container process-wrap">
+      <div class="process-intro" data-reveal>
+        <p class="eyebrow">Our Design Process</p>
+        <h2 class="section-title mb0">What is your web design process? How do you start?</h2>
+        <p class="lead">Our main web design process is divided into the following steps — clear, collaborative and built for results.</p>
+      </div>
+
+      <ol class="timeline" data-stagger>
+        <li class="tl-item">
+          <span class="tl-label">Discovery</span>
+          <div class="tl-body">Before starting anything, we collect detailed information about the business, its users and every aspect of the project.</div>
+        </li>
+        <li class="tl-item">
+          <span class="tl-label">Scope</span>
+          <div class="tl-body">We define a UX audit and a clear scope, aligning goals, timeline and budget before a single pixel is drawn.</div>
+        </li>
+        <li class="tl-item">
+          <span class="tl-label">Web Structure</span>
+          <div class="tl-body">We start with user personas, key use cases and competitive analysis, then build sitemaps and information architecture.</div>
+        </li>
+        <li class="tl-item">
+          <span class="tl-label">Design & Layout</span>
+          <div class="tl-body">With wireframes in hand, we arrange visual elements — text, images and shapes — into a polished, on-brand layout.</div>
+        </li>
+        <li class="tl-item">
+          <span class="tl-label">Development</span>
+          <div class="tl-body">We build front-end first (HTML/CSS) with pixel-perfect fidelity, then wire up the back-end and integrations.</div>
+        </li>
+        <li class="tl-item">
+          <span class="tl-label">Launch & Care</span>
+          <div class="tl-body">After testing on a staging server, we launch — then keep the site healthy with ongoing maintenance and updates.</div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials ===== -->
+  <section class="section" id="clients">
+    <div class="container">
+      <p class="eyebrow" data-reveal>A few words from our clients</p>
+      <h2 class="section-title" data-reveal>Trusted by teams who care about the details.</h2>
+
+      <div class="quotes-grid" data-stagger>
+        <figure class="quote-card">
+          <blockquote>“The visual guide gave our whole team a clear view of what the site would look like. Development stayed on track and on brand the entire time.”</blockquote>
+          <figcaption>
+            <span class="avatar" aria-hidden="true">FM</span>
+            <span class="who"><strong>Floyd Miles</strong><small>IT Analyst</small></span>
+          </figcaption>
+        </figure>
+
+        <figure class="quote-card">
+          <blockquote>“Every phase — from discovery to launch — was crucial and handled with care. The result speaks for itself: users love it.”</blockquote>
+          <figcaption>
+            <span class="avatar" aria-hidden="true">HI</span>
+            <span class="who"><strong>Henry Itondo</strong><small>Co-founder, Source DS</small></span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Blog ===== -->
+  <section class="section section-alt" id="blog">
+    <div class="container">
+      <div class="section-head-row" data-reveal>
+        <h2 class="section-title mb0">From the blog</h2>
+        <a href="#" class="btn btn-ghost btn-sm">View all</a>
+      </div>
+
+      <div class="blog-grid" data-stagger>
+        <article class="post-card">
+          <div class="post-thumb thumb-b"></div>
+          <div class="post-meta">
+            <div class="tags"><span>UI/UX</span><span>5 min read</span></div>
+            <h3>Top 10 UI and UX design mistakes to avoid</h3>
+            <p>Common mistakes businesses make with UI and UX design — and practical tips on how to fix them.</p>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-thumb thumb-a"></div>
+          <div class="post-meta">
+            <div class="tags"><span>Web Dev</span><span>5 min read</span></div>
+            <h3>The benefits of using a web framework</h3>
+            <p>How a modern framework speeds up development and keeps your codebase consistent and maintainable.</p>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-thumb thumb-c"></div>
+          <div class="post-meta">
+            <div class="tags"><span>SEO</span><span>4 min read</span></div>
+            <h3>Why performance is the new SEO</h3>
+            <p>Core Web Vitals now shape rankings. Here's what actually moves the needle for real sites.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta" id="contact">
+    <div class="container cta-inner" data-reveal>
+      <h2>Have a complex problem?<br />Let's turn it into an opportunity.</h2>
+      <a href="mailto:hello@nitro.studio" class="btn btn-accent btn-lg">Request a Project</a>
+    </div>
+  </section>
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="#">Nitro<span class="dot">.</span></a>
+      <p>A design & development studio turning complex problems into opportunities.</p>
+    </div>
+    <nav aria-label="Footer">
+      <h4>Studio</h4>
+      <a href="#services">Services</a>
+      <a href="#works">Works</a>
+      <a href="#process">Process</a>
+    </nav>
+    <nav aria-label="Social">
+      <h4>Social</h4>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Dribbble</a>
+    </nav>
+    <div class="footer-note">
+      <h4>Say hello</h4>
+      <a href="mailto:hello@nitro.studio">hello@nitro.studio</a>
+      <p class="rebuild-note">Rebuild-Demo · Figma-Vorlage „Nitro" → Code</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
